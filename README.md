@@ -1,66 +1,41 @@
-Title: Chatbot Data and Model Repository
+# AI Chatbot
 
-Description:
+Developed a web application using Machine learning  that allows users to interact with a pre-trained AI model for chat predictions.
+## *User Interface (UI)
 
-This repository contains the data and code used to train a simple chatbot model capable of classifying user inputs. The model utilizes a linear kernel Support Vector Machine (SVM) and is trained on a CSV dataset.
-
-Data:
-
-myfile.csv: This file contains the training data for the chatbot model. It should be in CSV format with two columns:
-input: Textual input from the user.
-label: Classification label for the input (e.g., greeting, question, command).
-Code:
-
-chatbot.py: This Python script implements the following steps:
-Imports necessary libraries (pandas, sklearn, pickle).
-Reads the CSV data using pandas.read_csv.
-Prepares features and labels by extracting the input and label columns from the data.
-Applies CountVectorizer from sklearn.feature_extraction.text to transform textual features into numerical vectors.
-Trains a linear SVM classifier using sklearn.svm.SVC with a linear kernel.
-Saves the trained model as pickle_model.pkl using pickle.
-Loads the saved model for prediction using pickle.
-Predicts labels for new user inputs.
-Running the Script:
-
-Clone this repository to your local machine.
-Install the required libraries: pandas, scikit-learn, and pickle. You can use pip install pandas scikit-learn pickle.
-Ensure you have the myfile.csv data file in the same directory as chatbot.py.
-Run the script: python chatbot.py.
-Example Usage:
-
-Python
-import pickle
-
-with open("pickle_model.pkl", "rb") as file:
-    model = pickle.load(file)
-
-# Example input
-text = ["Hello"]
-
-# Predict label for the input
-predicted_label = model.predict(vect.transform(text))
-
-print(predicted_label)
-Use code with caution.
-content_copy
-Note:
-
-The vect object (CountVectorizer instance) is not saved in the current code. You might need to consider saving it separately for future predictions without retraining the model entirely.
-Additional Considerations:
-
-This is a basic example. For production use, you would likely want to:
-Clean and pre-process the data more rigorously.
-Use a more sophisticated model architecture.
-Implement error handling and logging.
-Include a license file (e.g., MIT License) to clarify how others can use your code and data.
-By following these guidelines, you can create a comprehensive and informative README.md file that effectively documents your chatbot data, code, and usage instructions on GitHub.
+![Screenshot (46)](https://github.com/sagarjha265/Sentiment-Analysis-Web-Application/assets/67288575/f4b2b187-f1db-41f8-9b70-77d98e04f895)
 
 
+## Key Features:
 
+- Developed an intuitive and user-friendly web interface using Dash, integrating advanced NLP techniques to analyze the sentiment of text reviews accurately.
+- Implemented SVM model for sentiment analysis, leveraging count  vectorization to extract meaningful features from textual data and achieve high accuracy in sentiment classification.
+- Employed Yellowbrick for visualizing data distributions and model evaluation metrics, providing actionable insights for model improvement and refinement.
+- Implemented best practices for model deployment and persistence using Pickle, ensuring scalability and reproducibility of the solution.
 
-tune
+## Technology Used:
 
-share
+**Programming Languages:** Python
 
+**Libraries and Frameworks:**
+- **Dash:** Used to create the interactive web interface, enabling seamless user interaction and real-time feedback.
+- **Pandas:** Utilized for data manipulation and preprocessing tasks, ensuring data readiness for model training.
+- **Scikit-learn:** Employed for implementing machine learning algorithms, including logistic regression for sentiment classification.
+- **Natural Language Toolkit (NLTK):** Used for advanced text processing tasks such as tokenization, stemming, and stop word removal, enhancing the effectiveness of sentiment analysis.
+- **TF-IDF Vectorization:** Implemented to transform text data into numerical features, enabling effective processing and analysis of textual information in machine learning models.
+- **Yellowbrick:** Utilized for visualizing the frequency distribution of terms in the vocabulary and assessing class balance, providing actionable insights for model evaluation and refinement.
+- **Pickle:** Employed for serializing and deserializing Python objects, facilitating model persistence and deployment.
 
-more_vert
+**Web Development:**
+- **HTML Components and Bootstrap:** Leveraged to design and style the user interface, enhancing user experience and aesthetics.
+- **Web Browser Integration:** Integrated web browser functionality to open the application automatically upon execution, ensuring easy accessibility for users.
+
+## Backend Work and Machine Learning
+
+The backend of this application involves several crucial components, including:
+
+- **Model Development:** Implemented a logistic regression model trained on a labeled dataset to classify sentiment in text reviews. The model was optimized using TF-IDF vectorization to extract relevant features from the text.
+- **Preprocessing:** Utilized NLTK for text preprocessing tasks such as tokenization, stemming, and removing stop words to enhance the accuracy of sentiment analysis.
+- **Visualization:** Employed Yellowbrick for visualizing model evaluation metrics and data distributions, providing valuable insights for model refinement.
+- **Model Deployment:** Implemented best practices for model deployment and persistence using Pickle, ensuring scalability and reproducibility of the solution in real-world applications.
+
