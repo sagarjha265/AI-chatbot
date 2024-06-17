@@ -3,7 +3,9 @@
 Developed a web application using Machine learning  that allows users to interact with a pre-trained AI model for chat predictions.
 ## *User Interface (UI)
 
-![Screenshot (46)](https://github.com/sagarjha265/Sentiment-Analysis-Web-Application/assets/67288575/f4b2b187-f1db-41f8-9b70-77d98e04f895)
+![Screenshot (63)](https://github.com/sagarjha265/AI-chatbot/assets/67288575/ee37e81b-508d-4899-8f04-6d0e80b33ad5)
+
+![Screenshot (64)](https://github.com/sagarjha265/AI-chatbot/assets/67288575/55ed32d9-74ba-4b95-9f33-35e85a494ff9)
 
 
 ## Key Features:
